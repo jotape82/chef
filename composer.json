@@ -1,0 +1,8 @@
+{
+    "require": {
+        "nezamy/route": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {"ChefGourmet\\": "ChefGourmet/"}
+    }
+}
