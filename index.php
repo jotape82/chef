@@ -12,9 +12,6 @@ $app->request  	= System\Request::instance();
 $app->route	    = System\Route::instance($app->request);
 $route		    = $app->route;
 
-$route->get('/', function () {
-	phpinfo();
-});
 $route->post('/login', 'src\chefgourmet\Chefgourmet@login');
 $route->get('/getOrder/{date}/{orderId}?', 'src\chefgourmet\Chefgourmet@getOrder');
 $route->get('/getOrders/{from}/{to}', 'src\chefgourmet\Chefgourmet@getOrders');
