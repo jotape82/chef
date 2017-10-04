@@ -1,5 +1,9 @@
 # Use PHP5.6 Single php.ini as default
-AddHandler application/x-httpd-php56s .php
+AddHandler php70-fcgi .php
+
+<FilesMatch \.php$>
+SetHandler php70-cgi
+</FilesMatch>
 
 <IfModule mod_rewrite.c>
     RewriteEngine On

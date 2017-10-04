@@ -3,6 +3,6 @@
         "nezamy/route": "^1.1"
     },
     "autoload": {
-        "psr-4": {"ChefGourmet\\": "ChefGourmet/"}
+        "psr-4": {"src\\chefgourmet\\": "src/chefgourmet"}
     }
 }

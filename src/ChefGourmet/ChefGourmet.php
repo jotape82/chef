@@ -1,8 +1,8 @@
 <?php
 
-namespace src\ChefGourmet;
+namespace src\chefgourmet;
 
-class ChefGourmet
+class Chefgourmet
 {
 	public $employee_id;
 	public $menu_id = 21;
