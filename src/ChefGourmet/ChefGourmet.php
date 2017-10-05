@@ -11,7 +11,10 @@ class Chefgourmet
 	private $curl;
 
     public function __construct(  ) {
-      $this->employee_id = app('request')->headers['employeeid'];
+
+        if ( array_key_exists('employeeid', app('request')->headers) ) {
+            $this->employee_id = app('request')->headers['employeeid'];
+        }
 
         $this->curl = curl_init();
     }
@@ -40,10 +43,10 @@ class Chefgourmet
         curl_close($this->curl);
 
         if ($err) {
-            echo "cURL Error #:" . $err;
+            return $this->error($err);
         } else {
             $this->employee_id = $response->result->id;
-            echo json_encode([ 'employee_id' => $this->employee_id ]);
+            $this->send([ 'employeeid' => $this->employee_id ]);
         }
     }
     /**
@@ -80,9 +83,9 @@ class Chefgourmet
         curl_close($curl);
 
         if ($err) {
-            echo "cURL Error #:" . $err;
+            return $this->error($err);
         } else {
-            echo json_encode($this->parseFood($response));
+            return $this->send($this->parseFood($response));
         }
     }
 
@@ -112,9 +115,9 @@ class Chefgourmet
         curl_close($this->curl);
 
         if ($err) {
-            echo "cURL Error #:" . $err;
+            return $this->error($err);
         } else {
-            echo json_encode($response);
+            return $this->send($response->result);
         }
     }
 
@@ -143,9 +146,9 @@ class Chefgourmet
         curl_close($this->curl);
 
         if ($err) {
-            echo "cURL Error #:" . $err;
+            return $this->error($err);
         } else {
-            echo json_encode($response);
+            return $this->send($response->result);
         }
     }
 
@@ -176,9 +179,9 @@ class Chefgourmet
         curl_close($this->curl);
 
         if ($err) {
-            echo "cURL Error #:" . $err;
+            return $this->error($err);
         } else {
-            echo json_encode($response);
+            return $this->send($response);
         }
     }
 
@@ -207,9 +210,9 @@ class Chefgourmet
         curl_close($this->curl);
 
         if ($err) {
-            echo "cURL Error #:" . $err;
+            return $this->error($err);
         } else {
-            echo json_encode($response);
+            return $this->send($response);
         }
     }
 
@@ -255,4 +258,13 @@ class Chefgourmet
 
         return $newFoods;
     }
+
+    private function send($object) {
+        echo json_encode(['data' => $object]);
+    }
+
+    private function error($error) {
+        echo json_encode(['error' => $error]);
+    }
+
 }
