@@ -22,13 +22,13 @@
       <file leaf-file-name="ChefGourmet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ChefGourmet/ChefGourmet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="215" column="9" lean-forward="true" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+            <state relative-caret-position="430">
+              <caret line="214" column="43" lean-forward="false" selection-start-line="214" selection-start-column="43" selection-end-line="214" selection-end-column="43" />
               <folding>
                 <element signature="e#1601#2919#0#PHP" expanded="false" />
                 <element signature="e#3000#4020#0#PHP" expanded="false" />
                 <element signature="e#4080#5033#0#PHP" expanded="false" />
-                <element signature="e#7207#8496#0#PHP" expanded="false" />
+                <element signature="e#7208#8497#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -157,12 +157,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507207737123</updated>
-      <workItem from="1507207738835" duration="2432000" />
+      <workItem from="1507207738835" duration="2483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2432000" />
+    <option name="totallyTimeSpent" value="2483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1600" height="830" extended-state="6" />
@@ -210,13 +210,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ChefGourmet/ChefGourmet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="215" column="9" lean-forward="true" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+        <state relative-caret-position="430">
+          <caret line="214" column="43" lean-forward="false" selection-start-line="214" selection-start-column="43" selection-end-line="214" selection-end-column="43" />
           <folding>
             <element signature="e#1601#2919#0#PHP" expanded="false" />
             <element signature="e#3000#4020#0#PHP" expanded="false" />
             <element signature="e#4080#5033#0#PHP" expanded="false" />
-            <element signature="e#7207#8496#0#PHP" expanded="false" />
+            <element signature="e#7208#8497#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
